@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load static %}
+{% block content %}
+<!-- Header -->
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text" style="background-color:rgba(128,128,128,0.5);">
+      <div class="intro-lead-in">Welcome To Our Studio!</div>
+      <div class="intro-heading text-uppercase">It's Nice To Meet You</div>
+      <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/tacotron">Try Tacotron!</a>
+    </div>
+  </div>
+</header>
+
+<!-- Services -->
+<section id="works">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Works</h2>
+        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-12" style="margin-bottom: 3rem">
+        <h3 class="section-heading">JTBC News Room</h3>
+        <video width="100%" controls>
+          <source src="{% static 'works/DeepStudio.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+      <div class="col-12" style="margin-bottom: 3rem">
+        <h3 class="section-heading">Goblin</h3>
+        <video width="100%" controls>
+          <source src="{% static 'works/samsin.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="col-12">
+        <h3 class="section-heading">Han ji-min to Prof.Yun</h3>
+        <video width="100%" controls>
+          <source src="{% static 'works/h2y_1min.mp4' %}" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Grid -->
+
+
+<!-- Team -->
+<section class="bg-light" id="team">
+  <div class="container justify-content-center">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+        <!-- <h3 class="section-subheading text-muted">Image processing</h3> -->
+      </div>
+    </div>
+    <br />
+    <!-- <hr style="color:black"> -->
+    <div class="row justify-content-center">
+      <h3 class="section-heading text-uppercase">Image processing</h3>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src='{% static "img/team/v1.jpeg" %}' alt="">
+          <h4>Heo Yu-jin</h4>
+          <!-- <p class="text-muted">Lead Designer</p> -->
+          <!-- <ul class="list-inline social-buttons">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src='{% static "img/team/v2.jpeg" %}' alt="">
+          <h4>Jeong In-yeong</h4>
+          <!-- <p class="text-muted">Lead Marketer</p> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src='{% static "img/team/v3.jpeg" %}' alt="">
+          <h4>Park Jung-woon</h4>
+          <!-- <p class="text-muted">Lead Developer</p> -->
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src='{% static "img/team/v4.jpeg" %}' alt="">
+          <h4>Hong Ye-rim</h4>
+          <!-- <p class="text-muted">Lead Developer</p> -->
+
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr>
+    <div class="row justify-content-center">
+      <h3 class="section-heading text-uppercase">Speech processing</h3>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src='{% static "img/team/s1.jpeg" %}' alt="">
+          <h4>Yoo Kyun-hyung</h4>
+          <!-- <p class="text-muted">Lead Designer</p> -->
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src='{% static "img/team/s2.jpeg" %}' alt="">
+          <h4>Lee Dong-hyun</h4>
+          <!-- <p class="text-muted">Lead Marketer</p> -->
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="team-member">
+          <img class="mx-auto rounded-circle" src='{% static "img/team/s3.jpeg" %}' alt="">
+          <h4>Lee Jae-hwan</h4>
+          <!-- <p class="text-muted">Lead Developer</p> -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients posco, postec -->
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <a href="#">
+          <img class="img-fluid d-block mx-auto" src='{% static "img/logos/posco.png" %}' alt="">
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <a href="#">
+          <img class="img-fluid d-block mx-auto" src='{% static "img/logos/postech.jpeg" %}' alt="">
+        </a>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <a href="#">
+          <img class="img-fluid d-block mx-auto" src='{% static "img/logos/pirl.png" %}' alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
