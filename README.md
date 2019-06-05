@@ -1,2 +1,2 @@
 # DeepStudioCatalog
-\https://warm-ocean-85076.herokuapp.com
+https://deep-studio.herokuapp.com
